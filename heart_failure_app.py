@@ -9,10 +9,10 @@ from io import BytesIO
 
 
 
-best_log_model = joblib.load('models/best_log_model.pkl')
-best_rf_model = joblib.load('models/best_rf_model.pkl')
-best_gb_model = joblib.load('models/best_gb_model.pkl')
-scaler = joblib.load("models/scaler.pkl")
+best_log_model = joblib.load('https://github.com/behshad-ghasemi/blank-app/blob/main/models/best_log_model.pkl')
+best_rf_model = joblib.load('https://github.com/behshad-ghasemi/blank-app/blob/main/models/best_rf_model.pkl')
+best_gb_model = joblib.load('https://github.com/behshad-ghasemi/blank-app/blob/main/models/best_gb_model.pkl')
+scaler = joblib.load("https://github.com/behshad-ghasemi/blank-app/blob/main/models/scaler.pkl")
 
 st.title('Calculating the probability of getting HFpEF!')
 st.write("Please insert the input, you can see the probability of each model.\n"
