@@ -1,6 +1,4 @@
-git add models/best_log_model.pkl models/best_rf_model.pkl models/best_gb_model.pkl
-git commit -m "Add models to the project"
-git push origin main
+
 
 
 import streamlit as st
