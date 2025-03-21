@@ -19,7 +19,6 @@ best_log_model = joblib.load(model_path_log)
 best_rf_model = joblib.load(model_path_rf)
 best_gb_model = joblib.load(model_path_gb)
 
-st.write("✅ Models loaded successfully!")
 scaler = joblib.load("scaler.pkl")
 
 st.title('Calculating the probability of getting HFpEF!')
