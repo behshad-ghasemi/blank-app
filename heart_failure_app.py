@@ -23,7 +23,7 @@ scaler = joblib.load("scaler.pkl")
 
 st.title('Calculating the probability of getting HFpEF!')
 st.write("Please insert the input, you can see the probability of each model.\n"
-"\n Have a good prediction, Behshad :)")
+"\n Have a good prediction, \n Best Wishes, Behshad :)")
 
 mtDNA_cn = st.number_input("mtDNA cn", min_value=0.0, max_value=1.0, step=0.01)
 telomere = st.number_input("telomere", min_value=0.0, max_value=1.0, step=0.01)
