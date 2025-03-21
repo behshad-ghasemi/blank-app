@@ -33,11 +33,21 @@ import pandas as pd
 import joblib  # برای بارگذاری مدل‌های ذخیره‌شده
 from io import BytesIO
 
+import streamlit as st
+import joblib
+import os
 
+# مسیر صحیح برای فایل‌های مدل
+model_path_log = os.path.join("models", "best_log_model.pkl")
+model_path_rf = os.path.join("models", "best_rf_model.pkl")
+model_path_gb = os.path.join("models", "best_gb_model.pkl")
 
-best_log_model = joblib.load('best_log_model.pkl')
-best_rf_model = joblib.load('best_rf_model.pkl')
-best_gb_model = joblib.load('best_gb_model.pkl')
+# بارگذاری مدل‌ها از لوکال
+best_log_model = joblib.load(model_path_log)
+best_rf_model = joblib.load(model_path_rf)
+best_gb_model = joblib.load(model_path_gb)
+
+st.write("✅ Models loaded successfully!")
 scaler = joblib.load("scaler.pkl")
 
 st.title('Calculating the probability of getting HFpEF!')
