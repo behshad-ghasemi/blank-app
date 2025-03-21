@@ -1,8 +1,14 @@
+git add requirements.txt
+git commit -m "Add requirements.txt for dependencies"
+git push origin main
+
+
 import streamlit as st
 import numpy as np
 import pandas as pd
 import joblib  # برای بارگذاری مدل‌های ذخیره‌شده
 from io import BytesIO
+
 
 
 best_log_model = joblib.load(r"C:\Users\behsh\AppData\Local\Desktop\Flask_app\best_log_model.pkl")
@@ -84,4 +90,5 @@ if st.button('Etimation'):
         return fig
 
     feature_importance_fig = plot_feature_importance(best_gb_model)
+
 
